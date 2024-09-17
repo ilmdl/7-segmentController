@@ -1,0 +1,983 @@
+
+ShiftReg with string.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000142  00800100  000005c0  00000634  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000005c0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000776  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000007a8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  000007e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00001246  00000000  00000000  00000830  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000896  00000000  00000000  00001a76  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000005ce  00000000  00000000  0000230c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000b4  00000000  00000000  000028dc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000004da  00000000  00000000  00002990  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000073c  00000000  00000000  00002e6a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000038  00000000  00000000  000035a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 79 00 	jmp	0xf2	; 0xf2 <__ctors_end>
+   4:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+   8:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+   c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  10:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  14:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  18:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  1c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  20:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  24:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  28:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  2c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  30:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  34:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  38:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  3c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  40:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  44:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  48:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  4c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  50:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  54:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  58:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  5c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  60:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  64:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  68:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  6c:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  70:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  74:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  78:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__bad_interrupt>
+  7c:	9b 00       	.word	0x009b	; ????
+  7e:	54 01       	movw	r10, r8
+  80:	54 01       	movw	r10, r8
+  82:	54 01       	movw	r10, r8
+  84:	54 01       	movw	r10, r8
+  86:	54 01       	movw	r10, r8
+  88:	54 01       	movw	r10, r8
+  8a:	54 01       	movw	r10, r8
+  8c:	54 01       	movw	r10, r8
+  8e:	54 01       	movw	r10, r8
+  90:	54 01       	movw	r10, r8
+  92:	54 01       	movw	r10, r8
+  94:	54 01       	movw	r10, r8
+  96:	54 01       	movw	r10, r8
+  98:	54 01       	movw	r10, r8
+  9a:	54 01       	movw	r10, r8
+  9c:	22 01       	movw	r4, r4
+  9e:	27 01       	movw	r4, r14
+  a0:	2c 01       	movw	r4, r24
+  a2:	31 01       	movw	r6, r2
+  a4:	36 01       	movw	r6, r12
+  a6:	3b 01       	movw	r6, r22
+  a8:	40 01       	movw	r8, r0
+  aa:	45 01       	movw	r8, r10
+  ac:	4a 01       	movw	r8, r20
+  ae:	4f 01       	movw	r8, r30
+  b0:	54 01       	movw	r10, r8
+  b2:	54 01       	movw	r10, r8
+  b4:	54 01       	movw	r10, r8
+  b6:	54 01       	movw	r10, r8
+  b8:	54 01       	movw	r10, r8
+  ba:	54 01       	movw	r10, r8
+  bc:	54 01       	movw	r10, r8
+  be:	a0 00       	.word	0x00a0	; ????
+  c0:	a5 00       	.word	0x00a5	; ????
+  c2:	aa 00       	.word	0x00aa	; ????
+  c4:	af 00       	.word	0x00af	; ????
+  c6:	b4 00       	.word	0x00b4	; ????
+  c8:	b9 00       	.word	0x00b9	; ????
+  ca:	be 00       	.word	0x00be	; ????
+  cc:	c3 00       	.word	0x00c3	; ????
+  ce:	c8 00       	.word	0x00c8	; ????
+  d0:	cd 00       	.word	0x00cd	; ????
+  d2:	d2 00       	.word	0x00d2	; ????
+  d4:	d7 00       	.word	0x00d7	; ????
+  d6:	dc 00       	.word	0x00dc	; ????
+  d8:	e1 00       	.word	0x00e1	; ????
+  da:	e6 00       	.word	0x00e6	; ????
+  dc:	eb 00       	.word	0x00eb	; ????
+  de:	f0 00       	.word	0x00f0	; ????
+  e0:	f5 00       	.word	0x00f5	; ????
+  e2:	fa 00       	.word	0x00fa	; ????
+  e4:	ff 00       	.word	0x00ff	; ????
+  e6:	04 01       	movw	r0, r8
+  e8:	09 01       	movw	r0, r18
+  ea:	0e 01       	movw	r0, r28
+  ec:	13 01       	movw	r2, r6
+  ee:	18 01       	movw	r2, r16
+  f0:	1d 01       	movw	r2, r26
+
+000000f2 <__ctors_end>:
+  f2:	11 24       	eor	r1, r1
+  f4:	1f be       	out	0x3f, r1	; 63
+  f6:	cf ef       	ldi	r28, 0xFF	; 255
+  f8:	d8 e0       	ldi	r29, 0x08	; 8
+  fa:	de bf       	out	0x3e, r29	; 62
+  fc:	cd bf       	out	0x3d, r28	; 61
+
+000000fe <__do_copy_data>:
+  fe:	12 e0       	ldi	r17, 0x02	; 2
+ 100:	a0 e0       	ldi	r26, 0x00	; 0
+ 102:	b1 e0       	ldi	r27, 0x01	; 1
+ 104:	e0 ec       	ldi	r30, 0xC0	; 192
+ 106:	f5 e0       	ldi	r31, 0x05	; 5
+ 108:	02 c0       	rjmp	.+4      	; 0x10e <__do_copy_data+0x10>
+ 10a:	05 90       	lpm	r0, Z+
+ 10c:	0d 92       	st	X+, r0
+ 10e:	a2 34       	cpi	r26, 0x42	; 66
+ 110:	b1 07       	cpc	r27, r17
+ 112:	d9 f7       	brne	.-10     	; 0x10a <__do_copy_data+0xc>
+ 114:	0e 94 b4 02 	call	0x568	; 0x568 <main>
+ 118:	0c 94 de 02 	jmp	0x5bc	; 0x5bc <_exit>
+
+0000011c <__bad_interrupt>:
+ 11c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000120 <LetterToRetrieve>:
+	0b00001100,
+	0b00001100,
+	0b00001100
+};
+uint8_t LetterToRetrieve (uint8_t CharcterInput, int line) {
+switch (CharcterInput) {
+ 120:	90 e0       	ldi	r25, 0x00	; 0
+ 122:	fc 01       	movw	r30, r24
+ 124:	b0 97       	sbiw	r30, 0x20	; 32
+ 126:	eb 33       	cpi	r30, 0x3B	; 59
+ 128:	f1 05       	cpc	r31, r1
+ 12a:	08 f0       	brcs	.+2      	; 0x12e <LetterToRetrieve+0xe>
+ 12c:	bd c0       	rjmp	.+378    	; 0x2a8 <LetterToRetrieve+0x188>
+ 12e:	e2 5c       	subi	r30, 0xC2	; 194
+ 130:	ff 4f       	sbci	r31, 0xFF	; 255
+ 132:	0c 94 d8 02 	jmp	0x5b0	; 0x5b0 <__tablejump2__>
+	case 0x20 :
+		return Rtd[line];
+ 136:	fb 01       	movw	r30, r22
+ 138:	e0 5e       	subi	r30, 0xE0	; 224
+ 13a:	fd 4f       	sbci	r31, 0xFD	; 253
+ 13c:	80 81       	ld	r24, Z
+ 13e:	08 95       	ret
+		break;
+	
+	//Capital letters
+	case 0x41:
+		return A[line];
+ 140:	fb 01       	movw	r30, r22
+ 142:	e8 5e       	subi	r30, 0xE8	; 232
+ 144:	fd 4f       	sbci	r31, 0xFD	; 253
+ 146:	80 81       	ld	r24, Z
+ 148:	08 95       	ret
+		break;
+	case 0x42:
+		return B[line];
+ 14a:	fb 01       	movw	r30, r22
+ 14c:	e0 5f       	subi	r30, 0xF0	; 240
+ 14e:	fd 4f       	sbci	r31, 0xFD	; 253
+ 150:	80 81       	ld	r24, Z
+ 152:	08 95       	ret
+		break;
+	case 0x43:
+		return C[line];
+ 154:	fb 01       	movw	r30, r22
+ 156:	e8 5f       	subi	r30, 0xF8	; 248
+ 158:	fd 4f       	sbci	r31, 0xFD	; 253
+ 15a:	80 81       	ld	r24, Z
+ 15c:	08 95       	ret
+		break;
+	case 0x44:
+		return D[line];
+ 15e:	fb 01       	movw	r30, r22
+ 160:	e0 50       	subi	r30, 0x00	; 0
+ 162:	fe 4f       	sbci	r31, 0xFE	; 254
+ 164:	80 81       	ld	r24, Z
+ 166:	08 95       	ret
+		break;
+	case 0x45:
+		return E[line];
+ 168:	fb 01       	movw	r30, r22
+ 16a:	e8 50       	subi	r30, 0x08	; 8
+ 16c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 16e:	80 81       	ld	r24, Z
+ 170:	08 95       	ret
+		break;
+	case 0x46:
+		return F[line];
+ 172:	fb 01       	movw	r30, r22
+ 174:	e0 51       	subi	r30, 0x10	; 16
+ 176:	fe 4f       	sbci	r31, 0xFE	; 254
+ 178:	80 81       	ld	r24, Z
+ 17a:	08 95       	ret
+		break;
+	case 0x47:
+		return G[line];
+ 17c:	fb 01       	movw	r30, r22
+ 17e:	e8 51       	subi	r30, 0x18	; 24
+ 180:	fe 4f       	sbci	r31, 0xFE	; 254
+ 182:	80 81       	ld	r24, Z
+ 184:	08 95       	ret
+		break;
+	case 0x48:
+		return H[line];
+ 186:	fb 01       	movw	r30, r22
+ 188:	e0 52       	subi	r30, 0x20	; 32
+ 18a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 18c:	80 81       	ld	r24, Z
+ 18e:	08 95       	ret
+		break;
+	case 0x49:
+		return I[line];
+ 190:	fb 01       	movw	r30, r22
+ 192:	e8 52       	subi	r30, 0x28	; 40
+ 194:	fe 4f       	sbci	r31, 0xFE	; 254
+ 196:	80 81       	ld	r24, Z
+ 198:	08 95       	ret
+		break;
+	case 0x4a:
+		return J[line];
+ 19a:	fb 01       	movw	r30, r22
+ 19c:	e0 53       	subi	r30, 0x30	; 48
+ 19e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1a0:	80 81       	ld	r24, Z
+ 1a2:	08 95       	ret
+		break;
+	case 0x4b:
+		return K[line];
+ 1a4:	fb 01       	movw	r30, r22
+ 1a6:	e8 53       	subi	r30, 0x38	; 56
+ 1a8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1aa:	80 81       	ld	r24, Z
+ 1ac:	08 95       	ret
+		break;
+	case 0x4c:
+		return L[line];
+ 1ae:	fb 01       	movw	r30, r22
+ 1b0:	e0 54       	subi	r30, 0x40	; 64
+ 1b2:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1b4:	80 81       	ld	r24, Z
+ 1b6:	08 95       	ret
+		break;
+	case 0x4d:
+		return M[line];
+ 1b8:	fb 01       	movw	r30, r22
+ 1ba:	e8 54       	subi	r30, 0x48	; 72
+ 1bc:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1be:	80 81       	ld	r24, Z
+ 1c0:	08 95       	ret
+		break;
+	case 0x4e:
+		return N[line];
+ 1c2:	fb 01       	movw	r30, r22
+ 1c4:	e0 55       	subi	r30, 0x50	; 80
+ 1c6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1c8:	80 81       	ld	r24, Z
+ 1ca:	08 95       	ret
+		break;
+	case 0x4f:
+		return O[line];
+ 1cc:	fb 01       	movw	r30, r22
+ 1ce:	e8 55       	subi	r30, 0x58	; 88
+ 1d0:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1d2:	80 81       	ld	r24, Z
+ 1d4:	08 95       	ret
+		break;
+	case 0x50:
+		return P[line];
+ 1d6:	fb 01       	movw	r30, r22
+ 1d8:	e0 56       	subi	r30, 0x60	; 96
+ 1da:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1dc:	80 81       	ld	r24, Z
+ 1de:	08 95       	ret
+		break;
+	case 0x51:
+		return Q[line];
+ 1e0:	fb 01       	movw	r30, r22
+ 1e2:	e8 56       	subi	r30, 0x68	; 104
+ 1e4:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1e6:	80 81       	ld	r24, Z
+ 1e8:	08 95       	ret
+		break;
+	case 0x52:
+		return R[line];
+ 1ea:	fb 01       	movw	r30, r22
+ 1ec:	e0 57       	subi	r30, 0x70	; 112
+ 1ee:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1f0:	80 81       	ld	r24, Z
+ 1f2:	08 95       	ret
+		break;
+	case 0x53:
+		return S[line];
+ 1f4:	fb 01       	movw	r30, r22
+ 1f6:	e8 57       	subi	r30, 0x78	; 120
+ 1f8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1fa:	80 81       	ld	r24, Z
+ 1fc:	08 95       	ret
+		break;
+	case 0x54:
+		return T[line];
+ 1fe:	fb 01       	movw	r30, r22
+ 200:	e0 58       	subi	r30, 0x80	; 128
+ 202:	fe 4f       	sbci	r31, 0xFE	; 254
+ 204:	80 81       	ld	r24, Z
+ 206:	08 95       	ret
+		break;
+	case 0x55:
+		return U[line];
+ 208:	fb 01       	movw	r30, r22
+ 20a:	e8 58       	subi	r30, 0x88	; 136
+ 20c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 20e:	80 81       	ld	r24, Z
+ 210:	08 95       	ret
+		break;
+	case 0x56:
+		return V[line];
+ 212:	fb 01       	movw	r30, r22
+ 214:	e0 59       	subi	r30, 0x90	; 144
+ 216:	fe 4f       	sbci	r31, 0xFE	; 254
+ 218:	80 81       	ld	r24, Z
+ 21a:	08 95       	ret
+		break;
+	case 0x57:
+		return W[line];
+ 21c:	fb 01       	movw	r30, r22
+ 21e:	e8 59       	subi	r30, 0x98	; 152
+ 220:	fe 4f       	sbci	r31, 0xFE	; 254
+ 222:	80 81       	ld	r24, Z
+ 224:	08 95       	ret
+		break;
+	case 0x58:
+		return X[line];
+ 226:	fb 01       	movw	r30, r22
+ 228:	e0 5a       	subi	r30, 0xA0	; 160
+ 22a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 22c:	80 81       	ld	r24, Z
+ 22e:	08 95       	ret
+		break;
+	case 0x59:
+		return Y[line];
+ 230:	fb 01       	movw	r30, r22
+ 232:	e8 5a       	subi	r30, 0xA8	; 168
+ 234:	fe 4f       	sbci	r31, 0xFE	; 254
+ 236:	80 81       	ld	r24, Z
+ 238:	08 95       	ret
+		break;
+	case 0x5a:
+		return Z[line];
+ 23a:	fb 01       	movw	r30, r22
+ 23c:	e0 5b       	subi	r30, 0xB0	; 176
+ 23e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 240:	80 81       	ld	r24, Z
+ 242:	08 95       	ret
+		break;
+	
+	//Numbers
+	case 0x30:
+		return Zero[line];
+ 244:	fb 01       	movw	r30, r22
+ 246:	e8 5b       	subi	r30, 0xB8	; 184
+ 248:	fe 4f       	sbci	r31, 0xFE	; 254
+ 24a:	80 81       	ld	r24, Z
+ 24c:	08 95       	ret
+		break;
+	case 0x31:
+		return one[line];
+ 24e:	fb 01       	movw	r30, r22
+ 250:	e0 5c       	subi	r30, 0xC0	; 192
+ 252:	fe 4f       	sbci	r31, 0xFE	; 254
+ 254:	80 81       	ld	r24, Z
+ 256:	08 95       	ret
+		break;
+	case 0x32:
+		return two[line];
+ 258:	fb 01       	movw	r30, r22
+ 25a:	e8 5c       	subi	r30, 0xC8	; 200
+ 25c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 25e:	80 81       	ld	r24, Z
+ 260:	08 95       	ret
+		break;
+	case 0x33:
+		return three[line];
+ 262:	fb 01       	movw	r30, r22
+ 264:	e0 5d       	subi	r30, 0xD0	; 208
+ 266:	fe 4f       	sbci	r31, 0xFE	; 254
+ 268:	80 81       	ld	r24, Z
+ 26a:	08 95       	ret
+		break;
+	case 0x34:
+		return four[line];
+ 26c:	fb 01       	movw	r30, r22
+ 26e:	e8 5d       	subi	r30, 0xD8	; 216
+ 270:	fe 4f       	sbci	r31, 0xFE	; 254
+ 272:	80 81       	ld	r24, Z
+ 274:	08 95       	ret
+		break;
+	case 0x35:
+		return five[line];
+ 276:	fb 01       	movw	r30, r22
+ 278:	e0 5e       	subi	r30, 0xE0	; 224
+ 27a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 27c:	80 81       	ld	r24, Z
+ 27e:	08 95       	ret
+		break;
+	case 0x36:
+		return six[line];
+ 280:	fb 01       	movw	r30, r22
+ 282:	e8 5e       	subi	r30, 0xE8	; 232
+ 284:	fe 4f       	sbci	r31, 0xFE	; 254
+ 286:	80 81       	ld	r24, Z
+ 288:	08 95       	ret
+		break;
+	case 0x37:
+		return seven[line];
+ 28a:	fb 01       	movw	r30, r22
+ 28c:	e0 5f       	subi	r30, 0xF0	; 240
+ 28e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 290:	80 81       	ld	r24, Z
+ 292:	08 95       	ret
+		break;
+	case 0x38:
+		return eight[line];
+ 294:	fb 01       	movw	r30, r22
+ 296:	e8 5f       	subi	r30, 0xF8	; 248
+ 298:	fe 4f       	sbci	r31, 0xFE	; 254
+ 29a:	80 81       	ld	r24, Z
+ 29c:	08 95       	ret
+		break;
+	case 0x39:
+		return nine[line];
+ 29e:	fb 01       	movw	r30, r22
+ 2a0:	e0 50       	subi	r30, 0x00	; 0
+ 2a2:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2a4:	80 81       	ld	r24, Z
+ 2a6:	08 95       	ret
+		break;
+	}
+}
+ 2a8:	08 95       	ret
+
+000002aa <ShrInitial>:
+	}
+}
+//--------------------------------------------------Main function end-------------------------------------------------------------------
+
+
+void ShrInitial(volatile uint8_t *ddr, int fnum, int lnum) {
+ 2aa:	da 01       	movw	r26, r20
+	for (int i = fnum; i <= lnum; i++){		//For loop that sets i to the pin of the first pin specified, the loop is stopped by the last pin specified
+ 2ac:	0f c0       	rjmp	.+30     	; 0x2cc <ShrInitial+0x22>
+		*(ddr - 1) |= (1 << i);				//Sets the pin at i on the port provided as an output
+ 2ae:	e8 2f       	mov	r30, r24
+ 2b0:	f9 2f       	mov	r31, r25
+ 2b2:	52 91       	ld	r21, -Z
+ 2b4:	21 e0       	ldi	r18, 0x01	; 1
+ 2b6:	30 e0       	ldi	r19, 0x00	; 0
+ 2b8:	06 2e       	mov	r0, r22
+ 2ba:	02 c0       	rjmp	.+4      	; 0x2c0 <ShrInitial+0x16>
+ 2bc:	22 0f       	add	r18, r18
+ 2be:	33 1f       	adc	r19, r19
+ 2c0:	0a 94       	dec	r0
+ 2c2:	e2 f7       	brpl	.-8      	; 0x2bc <ShrInitial+0x12>
+ 2c4:	25 2b       	or	r18, r21
+ 2c6:	20 83       	st	Z, r18
+}
+//--------------------------------------------------Main function end-------------------------------------------------------------------
+
+
+void ShrInitial(volatile uint8_t *ddr, int fnum, int lnum) {
+	for (int i = fnum; i <= lnum; i++){		//For loop that sets i to the pin of the first pin specified, the loop is stopped by the last pin specified
+ 2c8:	6f 5f       	subi	r22, 0xFF	; 255
+ 2ca:	7f 4f       	sbci	r23, 0xFF	; 255
+ 2cc:	a6 17       	cp	r26, r22
+ 2ce:	b7 07       	cpc	r27, r23
+ 2d0:	74 f7       	brge	.-36     	; 0x2ae <ShrInitial+0x4>
+		*(ddr - 1) |= (1 << i);				//Sets the pin at i on the port provided as an output
+	}
+}
+ 2d2:	08 95       	ret
+
+000002d4 <pulse>:
+
+void pulse(int r, volatile uint8_t *prt1) {
+ 2d4:	fb 01       	movw	r30, r22
+	*prt1 |= (1 << r);						//Sets the pin on the provided port to high
+ 2d6:	40 81       	ld	r20, Z
+ 2d8:	21 e0       	ldi	r18, 0x01	; 1
+ 2da:	30 e0       	ldi	r19, 0x00	; 0
+ 2dc:	b9 01       	movw	r22, r18
+ 2de:	02 c0       	rjmp	.+4      	; 0x2e4 <pulse+0x10>
+ 2e0:	66 0f       	add	r22, r22
+ 2e2:	77 1f       	adc	r23, r23
+ 2e4:	8a 95       	dec	r24
+ 2e6:	e2 f7       	brpl	.-8      	; 0x2e0 <pulse+0xc>
+ 2e8:	cb 01       	movw	r24, r22
+ 2ea:	46 2b       	or	r20, r22
+ 2ec:	40 83       	st	Z, r20
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 2ee:	00 00       	nop
+	_delay_us(clockdelay);
+	*prt1 &= ~(1 << r);						//Sets the pin on the provided port to low
+ 2f0:	90 81       	ld	r25, Z
+ 2f2:	80 95       	com	r24
+ 2f4:	89 23       	and	r24, r25
+ 2f6:	80 83       	st	Z, r24
+ 2f8:	08 95       	ret
+
+000002fa <ShrWrite>:
+}
+void ShrWrite(char singleCharacter, int pinno, volatile uint8_t *prt2, int rowNumber) {
+ 2fa:	cf 92       	push	r12
+ 2fc:	df 92       	push	r13
+ 2fe:	ef 92       	push	r14
+ 300:	ff 92       	push	r15
+ 302:	1f 93       	push	r17
+ 304:	cf 93       	push	r28
+ 306:	df 93       	push	r29
+ 308:	6b 01       	movw	r12, r22
+ 30a:	7a 01       	movw	r14, r20
+	uint8_t byte = LetterToRetrieve(singleCharacter, rowNumber);	//Stores the 8-bit number returned from the function LetterToRetrieve in a variable called byte
+ 30c:	b9 01       	movw	r22, r18
+ 30e:	0e 94 90 00 	call	0x120	; 0x120 <LetterToRetrieve>
+ 312:	18 2f       	mov	r17, r24
+	for (int i = 0; i < 8; i++) {									//A loop that runs 8 times to send each bit to the shift register one at a time
+ 314:	c0 e0       	ldi	r28, 0x00	; 0
+ 316:	d0 e0       	ldi	r29, 0x00	; 0
+ 318:	0f c0       	rjmp	.+30     	; 0x338 <ShrWrite+0x3e>
+		if (byte & 0b10000000) {									//Checking if the 8th bit is 1 if true set the data pin to high else set the data pin to low
+ 31a:	11 23       	and	r17, r17
+ 31c:	24 f4       	brge	.+8      	; 0x326 <ShrWrite+0x2c>
+			ShrPrtData |= (1 << ShrData);							//Setting the data pin to high
+ 31e:	88 b1       	in	r24, 0x08	; 8
+ 320:	81 60       	ori	r24, 0x01	; 1
+ 322:	88 b9       	out	0x08, r24	; 8
+ 324:	03 c0       	rjmp	.+6      	; 0x32c <ShrWrite+0x32>
+		}
+		else {
+			ShrPrtData &= ~(1 << ShrData);							//Setting the data pin to low
+ 326:	88 b1       	in	r24, 0x08	; 8
+ 328:	8e 7f       	andi	r24, 0xFE	; 254
+ 32a:	88 b9       	out	0x08, r24	; 8
+		}
+		byte = byte << 1;											//Shifts the 8-bit number 1 bit to the left so that when the loop runs again it will be checking the seventh bit
+ 32c:	11 0f       	add	r17, r17
+		pulse(pinno,prt2);											//pulsing the shift clock so that whatever state the data pin was in will now be shifted into the shift register
+ 32e:	b7 01       	movw	r22, r14
+ 330:	c6 01       	movw	r24, r12
+ 332:	0e 94 6a 01 	call	0x2d4	; 0x2d4 <pulse>
+	_delay_us(clockdelay);
+	*prt1 &= ~(1 << r);						//Sets the pin on the provided port to low
+}
+void ShrWrite(char singleCharacter, int pinno, volatile uint8_t *prt2, int rowNumber) {
+	uint8_t byte = LetterToRetrieve(singleCharacter, rowNumber);	//Stores the 8-bit number returned from the function LetterToRetrieve in a variable called byte
+	for (int i = 0; i < 8; i++) {									//A loop that runs 8 times to send each bit to the shift register one at a time
+ 336:	21 96       	adiw	r28, 0x01	; 1
+ 338:	c8 30       	cpi	r28, 0x08	; 8
+ 33a:	d1 05       	cpc	r29, r1
+ 33c:	74 f3       	brlt	.-36     	; 0x31a <ShrWrite+0x20>
+			ShrPrtData &= ~(1 << ShrData);							//Setting the data pin to low
+		}
+		byte = byte << 1;											//Shifts the 8-bit number 1 bit to the left so that when the loop runs again it will be checking the seventh bit
+		pulse(pinno,prt2);											//pulsing the shift clock so that whatever state the data pin was in will now be shifted into the shift register
+	}
+}
+ 33e:	df 91       	pop	r29
+ 340:	cf 91       	pop	r28
+ 342:	1f 91       	pop	r17
+ 344:	ff 90       	pop	r15
+ 346:	ef 90       	pop	r14
+ 348:	df 90       	pop	r13
+ 34a:	cf 90       	pop	r12
+ 34c:	08 95       	ret
+
+0000034e <PrintString>:
+void  PrintString(char *string, char *string1, char *string2) {
+ 34e:	0f 93       	push	r16
+ 350:	1f 93       	push	r17
+ 352:	cf 93       	push	r28
+ 354:	df 93       	push	r29
+ 356:	cd b7       	in	r28, 0x3d	; 61
+ 358:	de b7       	in	r29, 0x3e	; 62
+ 35a:	65 97       	sbiw	r28, 0x15	; 21
+ 35c:	0f b6       	in	r0, 0x3f	; 63
+ 35e:	f8 94       	cli
+ 360:	de bf       	out	0x3e, r29	; 62
+ 362:	0f be       	out	0x3f, r0	; 63
+ 364:	cd bf       	out	0x3d, r28	; 61
+ 366:	da 01       	movw	r26, r20
+	char charArray[7];								//Store the seven characters received from the first string in an array.
+	char charArray1[7];								//Store the seven characters received from the second string in an array.
+	char charArray2[7];								//Store the seven characters received from the third string in an array.
+	for (int i = 0; i<7; i++) {					//A loop to repeat seven times to go through the seven characters.
+ 368:	20 e0       	ldi	r18, 0x00	; 0
+ 36a:	30 e0       	ldi	r19, 0x00	; 0
+ 36c:	2d c0       	rjmp	.+90     	; 0x3c8 <PrintString+0x7a>
+		//Checking if any of to characters being received are spaces(" ") and if they are they are skipped.
+		//Store the character from the first string in the array at position 1.
+		//Move to the next character These three steps are repeated thrice.
+		if (*string == 0x20) string++;			
+ 36e:	fc 01       	movw	r30, r24
+ 370:	40 81       	ld	r20, Z
+ 372:	40 32       	cpi	r20, 0x20	; 32
+ 374:	09 f4       	brne	.+2      	; 0x378 <PrintString+0x2a>
+ 376:	01 96       	adiw	r24, 0x01	; 1
+		charArray[i] = *string;					
+ 378:	fc 01       	movw	r30, r24
+ 37a:	41 91       	ld	r20, Z+
+ 37c:	cf 01       	movw	r24, r30
+ 37e:	e1 e0       	ldi	r30, 0x01	; 1
+ 380:	f0 e0       	ldi	r31, 0x00	; 0
+ 382:	ec 0f       	add	r30, r28
+ 384:	fd 1f       	adc	r31, r29
+ 386:	e2 0f       	add	r30, r18
+ 388:	f3 1f       	adc	r31, r19
+ 38a:	40 83       	st	Z, r20
+		string++;								
+		if (*string1 == 0x20) string1++;
+ 38c:	fb 01       	movw	r30, r22
+ 38e:	40 81       	ld	r20, Z
+ 390:	40 32       	cpi	r20, 0x20	; 32
+ 392:	11 f4       	brne	.+4      	; 0x398 <PrintString+0x4a>
+ 394:	6f 5f       	subi	r22, 0xFF	; 255
+ 396:	7f 4f       	sbci	r23, 0xFF	; 255
+		charArray1[i] = *string1;
+ 398:	fb 01       	movw	r30, r22
+ 39a:	41 91       	ld	r20, Z+
+ 39c:	bf 01       	movw	r22, r30
+ 39e:	e8 e0       	ldi	r30, 0x08	; 8
+ 3a0:	f0 e0       	ldi	r31, 0x00	; 0
+ 3a2:	ec 0f       	add	r30, r28
+ 3a4:	fd 1f       	adc	r31, r29
+ 3a6:	e2 0f       	add	r30, r18
+ 3a8:	f3 1f       	adc	r31, r19
+ 3aa:	40 83       	st	Z, r20
+		string1++;
+		if (*string2 == 0x20) string2++;
+ 3ac:	4c 91       	ld	r20, X
+ 3ae:	40 32       	cpi	r20, 0x20	; 32
+ 3b0:	09 f4       	brne	.+2      	; 0x3b4 <PrintString+0x66>
+ 3b2:	11 96       	adiw	r26, 0x01	; 1
+		charArray2[i] = *string2;
+ 3b4:	4d 91       	ld	r20, X+
+ 3b6:	ef e0       	ldi	r30, 0x0F	; 15
+ 3b8:	f0 e0       	ldi	r31, 0x00	; 0
+ 3ba:	ec 0f       	add	r30, r28
+ 3bc:	fd 1f       	adc	r31, r29
+ 3be:	e2 0f       	add	r30, r18
+ 3c0:	f3 1f       	adc	r31, r19
+ 3c2:	40 83       	st	Z, r20
+}
+void  PrintString(char *string, char *string1, char *string2) {
+	char charArray[7];								//Store the seven characters received from the first string in an array.
+	char charArray1[7];								//Store the seven characters received from the second string in an array.
+	char charArray2[7];								//Store the seven characters received from the third string in an array.
+	for (int i = 0; i<7; i++) {					//A loop to repeat seven times to go through the seven characters.
+ 3c4:	2f 5f       	subi	r18, 0xFF	; 255
+ 3c6:	3f 4f       	sbci	r19, 0xFF	; 255
+ 3c8:	27 30       	cpi	r18, 0x07	; 7
+ 3ca:	31 05       	cpc	r19, r1
+ 3cc:	84 f2       	brlt	.-96     	; 0x36e <PrintString+0x20>
+ 3ce:	00 e0       	ldi	r16, 0x00	; 0
+ 3d0:	10 e0       	ldi	r17, 0x00	; 0
+ 3d2:	bb c0       	rjmp	.+374    	; 0x54a <__EEPROM_REGION_LENGTH__+0x14a>
+		charArray2[i] = *string2;
+		string2++;
+		
+	}
+	for (int j = 0; j<8; j++) {			//A loop to go through all the characters stored in the array 8 times to print each row to the LCD.
+		ShrWrite(Rtd[j], 2, &regSet1, j); //Controls the row that is visible.
+ 3d4:	f8 01       	movw	r30, r16
+ 3d6:	e0 5e       	subi	r30, 0xE0	; 224
+ 3d8:	fd 4f       	sbci	r31, 0xFD	; 253
+ 3da:	98 01       	movw	r18, r16
+ 3dc:	48 e2       	ldi	r20, 0x28	; 40
+ 3de:	50 e0       	ldi	r21, 0x00	; 0
+ 3e0:	62 e0       	ldi	r22, 0x02	; 2
+ 3e2:	70 e0       	ldi	r23, 0x00	; 0
+ 3e4:	80 81       	ld	r24, Z
+ 3e6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		
+		//Characters from the first array to be shifted to the shift register.
+		ShrWrite(charArray[0], 3, &regSet1, j);
+ 3ea:	98 01       	movw	r18, r16
+ 3ec:	48 e2       	ldi	r20, 0x28	; 40
+ 3ee:	50 e0       	ldi	r21, 0x00	; 0
+ 3f0:	63 e0       	ldi	r22, 0x03	; 3
+ 3f2:	70 e0       	ldi	r23, 0x00	; 0
+ 3f4:	89 81       	ldd	r24, Y+1	; 0x01
+ 3f6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray[1], 4, &regSet1, j);
+ 3fa:	98 01       	movw	r18, r16
+ 3fc:	48 e2       	ldi	r20, 0x28	; 40
+ 3fe:	50 e0       	ldi	r21, 0x00	; 0
+ 400:	64 e0       	ldi	r22, 0x04	; 4
+ 402:	70 e0       	ldi	r23, 0x00	; 0
+ 404:	8a 81       	ldd	r24, Y+2	; 0x02
+ 406:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray[2], 5, &regSet1, j);
+ 40a:	98 01       	movw	r18, r16
+ 40c:	48 e2       	ldi	r20, 0x28	; 40
+ 40e:	50 e0       	ldi	r21, 0x00	; 0
+ 410:	65 e0       	ldi	r22, 0x05	; 5
+ 412:	70 e0       	ldi	r23, 0x00	; 0
+ 414:	8b 81       	ldd	r24, Y+3	; 0x03
+ 416:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray[3], 6, &regSet1, j);
+ 41a:	98 01       	movw	r18, r16
+ 41c:	48 e2       	ldi	r20, 0x28	; 40
+ 41e:	50 e0       	ldi	r21, 0x00	; 0
+ 420:	66 e0       	ldi	r22, 0x06	; 6
+ 422:	70 e0       	ldi	r23, 0x00	; 0
+ 424:	8c 81       	ldd	r24, Y+4	; 0x04
+ 426:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray[4], 7, &regSet1, j);
+ 42a:	98 01       	movw	r18, r16
+ 42c:	48 e2       	ldi	r20, 0x28	; 40
+ 42e:	50 e0       	ldi	r21, 0x00	; 0
+ 430:	67 e0       	ldi	r22, 0x07	; 7
+ 432:	70 e0       	ldi	r23, 0x00	; 0
+ 434:	8d 81       	ldd	r24, Y+5	; 0x05
+ 436:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray[5], 0, &regSet2, j);
+ 43a:	98 01       	movw	r18, r16
+ 43c:	45 e2       	ldi	r20, 0x25	; 37
+ 43e:	50 e0       	ldi	r21, 0x00	; 0
+ 440:	60 e0       	ldi	r22, 0x00	; 0
+ 442:	70 e0       	ldi	r23, 0x00	; 0
+ 444:	8e 81       	ldd	r24, Y+6	; 0x06
+ 446:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray[6], 1, &regSet2, j);
+ 44a:	98 01       	movw	r18, r16
+ 44c:	45 e2       	ldi	r20, 0x25	; 37
+ 44e:	50 e0       	ldi	r21, 0x00	; 0
+ 450:	61 e0       	ldi	r22, 0x01	; 1
+ 452:	70 e0       	ldi	r23, 0x00	; 0
+ 454:	8f 81       	ldd	r24, Y+7	; 0x07
+ 456:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		
+		//Characters from the second array to be shifted to the shift register.
+		ShrWrite(charArray1[0], 2, &regSet2, j);
+ 45a:	98 01       	movw	r18, r16
+ 45c:	45 e2       	ldi	r20, 0x25	; 37
+ 45e:	50 e0       	ldi	r21, 0x00	; 0
+ 460:	62 e0       	ldi	r22, 0x02	; 2
+ 462:	70 e0       	ldi	r23, 0x00	; 0
+ 464:	88 85       	ldd	r24, Y+8	; 0x08
+ 466:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray1[1], 3, &regSet2, j);
+ 46a:	98 01       	movw	r18, r16
+ 46c:	45 e2       	ldi	r20, 0x25	; 37
+ 46e:	50 e0       	ldi	r21, 0x00	; 0
+ 470:	63 e0       	ldi	r22, 0x03	; 3
+ 472:	70 e0       	ldi	r23, 0x00	; 0
+ 474:	89 85       	ldd	r24, Y+9	; 0x09
+ 476:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray1[2], 4, &regSet2, j);
+ 47a:	98 01       	movw	r18, r16
+ 47c:	45 e2       	ldi	r20, 0x25	; 37
+ 47e:	50 e0       	ldi	r21, 0x00	; 0
+ 480:	64 e0       	ldi	r22, 0x04	; 4
+ 482:	70 e0       	ldi	r23, 0x00	; 0
+ 484:	8a 85       	ldd	r24, Y+10	; 0x0a
+ 486:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray1[3], 5, &regSet2, j);
+ 48a:	98 01       	movw	r18, r16
+ 48c:	45 e2       	ldi	r20, 0x25	; 37
+ 48e:	50 e0       	ldi	r21, 0x00	; 0
+ 490:	65 e0       	ldi	r22, 0x05	; 5
+ 492:	70 e0       	ldi	r23, 0x00	; 0
+ 494:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 496:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray1[4], 6, &regSet2, j);
+ 49a:	98 01       	movw	r18, r16
+ 49c:	45 e2       	ldi	r20, 0x25	; 37
+ 49e:	50 e0       	ldi	r21, 0x00	; 0
+ 4a0:	66 e0       	ldi	r22, 0x06	; 6
+ 4a2:	70 e0       	ldi	r23, 0x00	; 0
+ 4a4:	8c 85       	ldd	r24, Y+12	; 0x0c
+ 4a6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray1[5], 7, &regSet2, j);
+ 4aa:	98 01       	movw	r18, r16
+ 4ac:	45 e2       	ldi	r20, 0x25	; 37
+ 4ae:	50 e0       	ldi	r21, 0x00	; 0
+ 4b0:	67 e0       	ldi	r22, 0x07	; 7
+ 4b2:	70 e0       	ldi	r23, 0x00	; 0
+ 4b4:	8d 85       	ldd	r24, Y+13	; 0x0d
+ 4b6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray1[6], 0, &regSet3, j);
+ 4ba:	98 01       	movw	r18, r16
+ 4bc:	4b e2       	ldi	r20, 0x2B	; 43
+ 4be:	50 e0       	ldi	r21, 0x00	; 0
+ 4c0:	60 e0       	ldi	r22, 0x00	; 0
+ 4c2:	70 e0       	ldi	r23, 0x00	; 0
+ 4c4:	8e 85       	ldd	r24, Y+14	; 0x0e
+ 4c6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		
+		//Characters from the third array to be shifted to the shift register.
+		ShrWrite(charArray2[0], 1, &regSet3, j);
+ 4ca:	98 01       	movw	r18, r16
+ 4cc:	4b e2       	ldi	r20, 0x2B	; 43
+ 4ce:	50 e0       	ldi	r21, 0x00	; 0
+ 4d0:	61 e0       	ldi	r22, 0x01	; 1
+ 4d2:	70 e0       	ldi	r23, 0x00	; 0
+ 4d4:	8f 85       	ldd	r24, Y+15	; 0x0f
+ 4d6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray2[1], 2, &regSet3, j);
+ 4da:	98 01       	movw	r18, r16
+ 4dc:	4b e2       	ldi	r20, 0x2B	; 43
+ 4de:	50 e0       	ldi	r21, 0x00	; 0
+ 4e0:	62 e0       	ldi	r22, 0x02	; 2
+ 4e2:	70 e0       	ldi	r23, 0x00	; 0
+ 4e4:	88 89       	ldd	r24, Y+16	; 0x10
+ 4e6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray2[2], 3, &regSet3, j);
+ 4ea:	98 01       	movw	r18, r16
+ 4ec:	4b e2       	ldi	r20, 0x2B	; 43
+ 4ee:	50 e0       	ldi	r21, 0x00	; 0
+ 4f0:	63 e0       	ldi	r22, 0x03	; 3
+ 4f2:	70 e0       	ldi	r23, 0x00	; 0
+ 4f4:	89 89       	ldd	r24, Y+17	; 0x11
+ 4f6:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray2[3], 4, &regSet3, j);
+ 4fa:	98 01       	movw	r18, r16
+ 4fc:	4b e2       	ldi	r20, 0x2B	; 43
+ 4fe:	50 e0       	ldi	r21, 0x00	; 0
+ 500:	64 e0       	ldi	r22, 0x04	; 4
+ 502:	70 e0       	ldi	r23, 0x00	; 0
+ 504:	8a 89       	ldd	r24, Y+18	; 0x12
+ 506:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray2[4], 5, &regSet3, j);
+ 50a:	98 01       	movw	r18, r16
+ 50c:	4b e2       	ldi	r20, 0x2B	; 43
+ 50e:	50 e0       	ldi	r21, 0x00	; 0
+ 510:	65 e0       	ldi	r22, 0x05	; 5
+ 512:	70 e0       	ldi	r23, 0x00	; 0
+ 514:	8b 89       	ldd	r24, Y+19	; 0x13
+ 516:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray2[5], 6, &regSet3, j);
+ 51a:	98 01       	movw	r18, r16
+ 51c:	4b e2       	ldi	r20, 0x2B	; 43
+ 51e:	50 e0       	ldi	r21, 0x00	; 0
+ 520:	66 e0       	ldi	r22, 0x06	; 6
+ 522:	70 e0       	ldi	r23, 0x00	; 0
+ 524:	8c 89       	ldd	r24, Y+20	; 0x14
+ 526:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		ShrWrite(charArray2[6], 7, &regSet3, j);
+ 52a:	98 01       	movw	r18, r16
+ 52c:	4b e2       	ldi	r20, 0x2B	; 43
+ 52e:	50 e0       	ldi	r21, 0x00	; 0
+ 530:	67 e0       	ldi	r22, 0x07	; 7
+ 532:	70 e0       	ldi	r23, 0x00	; 0
+ 534:	8d 89       	ldd	r24, Y+21	; 0x15
+ 536:	0e 94 7d 01 	call	0x2fa	; 0x2fa <ShrWrite>
+		pulse(Storeck, &regSet1);					//Pulsing the storage clock.
+ 53a:	68 e2       	ldi	r22, 0x28	; 40
+ 53c:	70 e0       	ldi	r23, 0x00	; 0
+ 53e:	81 e0       	ldi	r24, 0x01	; 1
+ 540:	90 e0       	ldi	r25, 0x00	; 0
+ 542:	0e 94 6a 01 	call	0x2d4	; 0x2d4 <pulse>
+		if (*string2 == 0x20) string2++;
+		charArray2[i] = *string2;
+		string2++;
+		
+	}
+	for (int j = 0; j<8; j++) {			//A loop to go through all the characters stored in the array 8 times to print each row to the LCD.
+ 546:	0f 5f       	subi	r16, 0xFF	; 255
+ 548:	1f 4f       	sbci	r17, 0xFF	; 255
+ 54a:	08 30       	cpi	r16, 0x08	; 8
+ 54c:	11 05       	cpc	r17, r1
+ 54e:	0c f4       	brge	.+2      	; 0x552 <__EEPROM_REGION_LENGTH__+0x152>
+ 550:	41 cf       	rjmp	.-382    	; 0x3d4 <PrintString+0x86>
+		ShrWrite(charArray2[5], 6, &regSet3, j);
+		ShrWrite(charArray2[6], 7, &regSet3, j);
+		pulse(Storeck, &regSet1);					//Pulsing the storage clock.
+		//_delay_ms(1);
+	}
+}
+ 552:	65 96       	adiw	r28, 0x15	; 21
+ 554:	0f b6       	in	r0, 0x3f	; 63
+ 556:	f8 94       	cli
+ 558:	de bf       	out	0x3e, r29	; 62
+ 55a:	0f be       	out	0x3f, r0	; 63
+ 55c:	cd bf       	out	0x3d, r28	; 61
+ 55e:	df 91       	pop	r29
+ 560:	cf 91       	pop	r28
+ 562:	1f 91       	pop	r17
+ 564:	0f 91       	pop	r16
+ 566:	08 95       	ret
+
+00000568 <main>:
+void ShrWrite(char singleCharacter, int pinno, volatile uint8_t *prt2, int rowNumber);	//Function to shift data to the shift register storage one bit at a time.
+void  PrintString(char *string, char *string1, char *string2);							//Function to print a string to the shift register.
+
+//--------------------------------------------------Main function start-------------------------------------------------------------------
+int main(void) {
+	*(&ShrPrtData -1) |= (1 << Storeck) | (1 << ShrData);	//Setting the shared storage clock and the data pins as outputs.
+ 568:	87 b1       	in	r24, 0x07	; 7
+ 56a:	83 60       	ori	r24, 0x03	; 3
+ 56c:	87 b9       	out	0x07, r24	; 7
+	ShrInitial(&regSet1, 2, 7);								//Initializing the first set of shift registers.
+ 56e:	47 e0       	ldi	r20, 0x07	; 7
+ 570:	50 e0       	ldi	r21, 0x00	; 0
+ 572:	62 e0       	ldi	r22, 0x02	; 2
+ 574:	70 e0       	ldi	r23, 0x00	; 0
+ 576:	88 e2       	ldi	r24, 0x28	; 40
+ 578:	90 e0       	ldi	r25, 0x00	; 0
+ 57a:	0e 94 55 01 	call	0x2aa	; 0x2aa <ShrInitial>
+	ShrInitial(&regSet2, 0, 7);								//Initializing the second set of shift registers.
+ 57e:	47 e0       	ldi	r20, 0x07	; 7
+ 580:	50 e0       	ldi	r21, 0x00	; 0
+ 582:	60 e0       	ldi	r22, 0x00	; 0
+ 584:	70 e0       	ldi	r23, 0x00	; 0
+ 586:	85 e2       	ldi	r24, 0x25	; 37
+ 588:	90 e0       	ldi	r25, 0x00	; 0
+ 58a:	0e 94 55 01 	call	0x2aa	; 0x2aa <ShrInitial>
+	ShrInitial(&regSet3, 0, 7);								//Initializing the third set of shift registers.
+ 58e:	47 e0       	ldi	r20, 0x07	; 7
+ 590:	50 e0       	ldi	r21, 0x00	; 0
+ 592:	60 e0       	ldi	r22, 0x00	; 0
+ 594:	70 e0       	ldi	r23, 0x00	; 0
+ 596:	8b e2       	ldi	r24, 0x2B	; 43
+ 598:	90 e0       	ldi	r25, 0x00	; 0
+ 59a:	0e 94 55 01 	call	0x2aa	; 0x2aa <ShrInitial>
+	while (1) {
+			PrintString("KAA 850K", "1029384", "MESSAGE"); //Print three strings to the shift register.
+ 59e:	48 e2       	ldi	r20, 0x28	; 40
+ 5a0:	52 e0       	ldi	r21, 0x02	; 2
+ 5a2:	60 e3       	ldi	r22, 0x30	; 48
+ 5a4:	72 e0       	ldi	r23, 0x02	; 2
+ 5a6:	88 e3       	ldi	r24, 0x38	; 56
+ 5a8:	92 e0       	ldi	r25, 0x02	; 2
+ 5aa:	0e 94 a7 01 	call	0x34e	; 0x34e <PrintString>
+ 5ae:	f7 cf       	rjmp	.-18     	; 0x59e <main+0x36>
+
+000005b0 <__tablejump2__>:
+ 5b0:	ee 0f       	add	r30, r30
+ 5b2:	ff 1f       	adc	r31, r31
+ 5b4:	05 90       	lpm	r0, Z+
+ 5b6:	f4 91       	lpm	r31, Z
+ 5b8:	e0 2d       	mov	r30, r0
+ 5ba:	09 94       	ijmp
+
+000005bc <_exit>:
+ 5bc:	f8 94       	cli
+
+000005be <__stop_program>:
+ 5be:	ff cf       	rjmp	.-2      	; 0x5be <__stop_program>
